@@ -11,7 +11,7 @@ export class SuccessAlertComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No server was created";
   serverName = 'TestServer';
-
+  serverCreate = false;
   userName ='';
   getServerStatus(){
     return this.serverStatus;
@@ -26,6 +26,7 @@ export class SuccessAlertComponent implements OnInit {
   ngOnInit(): void {
   }
   onCreateServer(){
+    this.serverCreate = true;
     this.serverCreationStatus = "Server was created!";
   }
   onUpdateUName(){

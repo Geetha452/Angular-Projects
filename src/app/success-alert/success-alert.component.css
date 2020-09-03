@@ -1,14 +1,10 @@
 p{
     color: black;
     padding: 5px;
-    background-color: burlywood;
-    border: 1px solid red;
+    background-color: white;
     width: fit-content;
 }
 .assign2 p{
     color: black;
-    padding: 4x;
-    background-color: burlywood;
-    border: 1px solid red;
-    width: 30%;
+    background-color: white;
 }
