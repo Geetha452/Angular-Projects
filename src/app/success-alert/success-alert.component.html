@@ -1,3 +1,31 @@
-
-    <h3>success-alert works!</h3>
-
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div>
+                <input
+                type = "text"
+                class= " form-control"
+                [(ngModel)] = "serverName"        
+                
+                >
+                <!--  Two-way Binding -->
+            </div>
+            <p>{{ serverName}}</p>
+            <button class= "btn btn-primary" [disabled] = "!allowNewServer" (click) = "onCreateServer()">Add Server</button>
+            <!-- Property Binding                                   Event Binding -->
+            <div> <li [innerText] = "allowNewServer"></li></div>
+                <p>success-alert works!
+                <!-- StringInterpolation -->
+                Server ID is {{ serverId }} & server status is {{ getServerStatus() }}  
+            </p>
+            <p>{{ serverCreationStatus }}</p>
+        </div>
+    </div>
+    <div class="row1">
+        <input type = "text" class="form-control"  [(ngModel)] = userName >
+        <div class = "assign2"> <p>{{userName}}</p>
+            <button class = "btn btn-primary" [disabled] =  "userName == ''" (click) = onUpdateUName()>Reset User</button>
+        </div>
+       
+    </div>
+</div>

@@ -10,7 +10,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 @NgModule({
   declarations: [
   AppComponent,
-   WarningAlertComponent,
+  //  WarningAlertComponent,
    SuccessAlertComponent
   ],
   imports: [
